@@ -1,10 +1,10 @@
 /* Reset some default browser styles */
 * {
   box-sizing: border-box;
-  padding: 10;
-  margin: 10;   
+  margin: 5px;
 }
 
+/* Define variables for colors */
 :root {
   --outer-space: #0a345e;
   --bright-turquoise: #2aefcb;
@@ -12,172 +12,176 @@
   --neutral-blue: #a6f2ff;
 }
 
-::selection {
-  background-color: var(--bright-turquoise);
-  color: var(--outer-space);
-}
-
-h1,
-h2,
-h3,
-h4{
-  margin-bottom: 0.6px;
-  color: var(--neutral-blue);
-  font-weight: 550;
-  line-height: 1.2;
-}
-
-h1 {
-  /* 4rem = 40px (4 * 10px) */
-  font-size: 45px;
-}
-
-h2 {
-  font-size: 35px;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-h4 {
-  font-size: 15px;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-
-
-/* Set a base font size and family */
+/* Apply global styles */
 body {
-  margin: 10;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Verdana,;
+  background-color: var(--outer-space);
+  color: var(--neutral-blue);
   font-size: 16px;
-  background-color: var(--cyan);
-  text-decoration: none;
+  line-height: 1.5;
+  margin: 3px;
+  padding: 3px;
+ display: flex;
+ flex-direction: column;
+ 
 }
 
-
-/* Style for the header section */
-header {
-  background-color: #114f5a;
-  color: var(--neutral-blue);
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Vertically center the content */
+/* Style the header section */
+.header {
+  padding: 2em 2em 0;
+  font-family: 'Verdana';
+  background-color: #2a607c;
+  color: #ffffff;
+  margin: 3px;
 }
 
-/* Style for the navigation links */
-.nav-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  
-}
-.header ul li {
- display: inline-block;
-  margin-left: 25px; 
-  
-} 
-.nav-links li {/* Adjust the spacing between links */
-  margin-right: 20px;
-  
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--neutral-blue);
-  font-weight: bold;
-  text-align: right;
-}
-/* Style for the h1 and p elements */
-.page-title {
-  font-size: 45px;
-
-}
-
-.page-title p {
-  font-size: 20px; /* Adjust the font size of the subtitle */
-  margin-top: 10px; /* Add some top margin to the subtitle */
-}
-
-This code will align the navigation links ("About," "Portfolio," and "Contact") on the right side of the header with equal top-bottom spacing. Adjust the styling as needed for your design preferences.
-
-
-.page-title {
-  font-size: 45px;
-  text-align: left;
+.header h1 {
   display: inline-block;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-left: 25px;
 }
 
-header ul li {
-  display: inline;
-  margin-right: 20px;
-  text-decoration: none;
+.header h1 .stamax {
+  color: #96ca62;
+  font-size: 50px;
 }
 
 .header div {
-  padding-top: 20px;
-  margin-right: 40px;
-  margin-top: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS';
-  display: inline-block;
+  padding-top: 15px;
+  margin-right: 5px;
+  float: right;
 }
+           
+.header ul {
+  font-family: 'Verdana';
+  list-style-type: none;
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 25px;
+  margin-top: -50px;
+ 
+}
+
+.header ul li {
+  display: inline-block;
+  margin-right: 5px;
+  
+} 
 
 a {
-  color: var(--neutral-blue);
-  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none; 
 }
 
+/* Style the main content */
 main {
-  width: 90%;
-  margin: 15px auto;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2%;
+  flex-direction: column;
+  padding: 2em 2em 0;
 }
 
-footer {
-  margin: 15px;
-  text-align: center;
-  padding: 20px 0;
-  color: var(--neutral-blue);
-  background-color: #114f5a;
+
+.card-about {
+  padding: 3em 3em 0;
+  font-family: 'Verdana';
+  background-color: #2a607c;
+  color: #ffffff;
+  margin: 3px;
+}
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
 }
 
-footer ul.icons li {
-  display: inline;
-  margin-right: 20px;
+
+.about-text {
+  flex: 1;
 }
 
-/* Add a new CSS class to the section */
+.float-right {
+  float: right;
+  margin-right: 25px;
+}
+.about-image {
+  flex: 1;
+  margin: 0 5px; /* Add some margin for spacing */
+}
+
+/* Add a media query for responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Back to a column layout on smaller screens */
+  }
+
+  .about-text,
+  .about-image {
+    flex: 1;
+    margin: 0;
+  }
+}
+
+
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .card {
-  display: flex; /* Use flexbox to create a row layout */
-  align-items: center; /* Align items vertically in the center */
+  flex-basis: calc(50% - 20px); /* To create two columns with a small gap */
+  margin-bottom: 20px;
+  /* Add other styling as needed */
 }
-
-/* Style for the "About Me" section */
-.about-me {
-  flex: 1; /* Take up remaining space in the row */
-  padding-right: 20px; /* Add some spacing between text and image */
-}
-
-/* Style for the image */
-.image img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container width */
-}
-
 .card header {
   padding: 20px;
   background: #13293d;
   color: #fff;
+} 
+
+/* For responsiveness on smaller screens */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
 
-.card img {
-  width: 25%;
-  /* The client insists that images be at least 400px */
-  min-width: 400px;
+footer {
+  background-color: #114f5a;
+  color: var(--neutral-blue);
+  padding: 2em 2em 0;
+  text-align: center;
 }
+
+footer .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul.icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Adjust the spacing between icons as needed */
+}
+
+footer ul.icons li {
+  display: inline;
+}
+
+footer h4 {
+  margin: 20px 0;
+  font-size: 20px; /* Adjust the font size as needed */
+  color: var(--neutral-blue);
+}
+
+
