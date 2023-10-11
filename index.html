@@ -12,12 +12,9 @@
 <body>
      <!-- Header Section -->
 	 <header>
-		<section class="header">
-		  <h1 class="page-title">
-			Stas Moro
-			<p>Professional Portfolio</p>
-		  </h1>
-		  <div class="nav-links">
+		<div class="header">
+			<h1>professional porfolio<span class="stamax"> StaMax</span></h1>
+		  <nav class="nav-links">
 			<ul>
 			  <li>
 				<a href="#about">About</a>
@@ -29,39 +26,43 @@
 				<a href="#contact">Contact</a>
 			  </li>
 			</ul>
-		  </div>
-		</section>
+		</nav>
+	</div>
 	  </header>
 	  
 
 <main>
-	<article id="about" class="card">
-			<div class="about-me">
-			  <h2>About Me</h2>
-			  <p>Hello, I'm Stas Moro, a passionate web developer based in Toronto. With a strong foundation in front-end and back-end development, I create interactive and visually appealing websites and applications that deliver exceptional user experiences.</p>
-			</div>
-			<div class="image">
-			  <img src="./assets/images/avatar.jpg" alt="website homepage" />
-			</div>	  
-	 </article>  
-   
-	<section id="portfolio" class="row justify-center"> 
-
-      <div  class="card-column">
-		  <header>Horiseon Marketing</header>
-		  <img src="./assets/images/horiseon.PNG" alt="website homepage" />
-		  <p>Development of the Horiseon Marketing website, particularly in areas like Search Engine Optimization (SEO) to boost online visibility, Online Reputation Management to control online perceptions, 
-			and Social Media Marketing for effective brand outreach and audience engagement.</p>
-		  <div class="Show More">
-		     <ul class="links">
-              <li>
-                <a href="https://stas-cell-max.github.io/horiseo_marketing/">Show More</a>
-              </li>
-			 </ul>
+	<article id="about" class="card-about">
+		<div class="about-content">
+		  <div class="about-text">
+			<h2>About Me</h2>
+			<p>Hello, I'm Stas Moro, a passionate web developer based in Toronto. With a strong foundation in front-end and back-end development, I create interactive and visually appealing websites and applications that deliver exceptional user experiences.</p>
 		  </div>
-  
-		<div  class="card-column">
-		  <header>Prework Study Guide</header>
+		  <div class="about-image">
+			<img src="./assets/images/avatar.jpg" class="float-right" alt="website homepage" />
+		  </div>
+		</div>
+	  </article> 
+   
+	  <main>
+		<div class="portfolio-container">
+		  <div class="card">
+			<header>Horiseon Marketing</header>
+			<img src="./assets/images/horiseon.PNG" alt="website homepage" />
+			<p>Development of the Horiseon Marketing website, particularly in areas like Search Engine Optimization (SEO) to boost online visibility, Online Reputation Management to control online perceptions, and Social Media Marketing for effective brand outreach and audience engagement.</p>
+			<div class="Show More">
+			  <ul class="links">
+				<li>
+				  <a href="https://stas-cell-max.github.io/horiseo_marketing/">Show More</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+	  
+		  
+	  
+		  <div class="card">
+			<header>Prework Study Guide</header>
 		  <img src="./assets/images/one-prework.PNG" alt="website homepage" />
 		  <p>The Prework Study Guide offers a concise overview of essential web development concepts. 
 			It covers HTML basics, including document structure and tags, CSS for styling web content, 
@@ -70,14 +71,13 @@
 		  <div class="Show More">
 			<ul class="links">
 			 <li>
-			   <a href="https://stas-cell-max.github.io/one-prework-study-web/"> target="_blank"</a>
+			   <a href="https://stas-cell-max.github.io/one-prework-study-web/"> Show More</a>
 			 </li>
 			</ul>
-		 </div>
-		
-  
-		 <div  class="card-column">
-		  <header>BARLO MS Centre</header>
+		  </div>
+	  
+		  <div class="card">
+			<header>BARLO MS Centre</header>
 		  <img src="./assets/images/barlo center.PNG" alt="website homepage" />
 		  <p>As an architectural designer, I contributed to the creation of the BARLO MS Centre, 
 			aligning with St. Michael's Hospital's mission to lead in MS care and research.</p>
@@ -87,11 +87,10 @@
 			   <a href="https://hariripontarini.com/projects/barlo-ms-centre/">Show More</a>
 			 </li>
 			</ul>
-		 </div>
-		
-  
-		 <div  class="card-column">
-		  <header>OPP Modernization</header>
+		  </div>
+	  
+		  <div class="card">
+			 <header>OPP Modernization</header>
 		  <img src="./assets/images/norr.PNG" alt="website homepage" />
 		  <p>OPP Stations Design & Build Modernization Project. The detachments vary in size and are located in Clinton, Hawkesbury, Little Current, Marathon, Mississauga, Moosonee, Orillia, Parry Sound and Fort Frances.
 			 Design and construction were completed in phases with completion expected in 2023.</p>
@@ -101,14 +100,15 @@
 			   <a href="https://norr.com/project/opp-modernization-project/">Show More</a>
 			 </li>
 			</ul>
-		 </div>
-
+		  </div>
+		</div>
 		</section>
-
 	  </main>
+	  
 
     <footer>
 		<footer id="footer">
+			<h4>Contact Info</h4>
 			<div class="inner">
 				<ul id="contact" class="icons">
 					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
