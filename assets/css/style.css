@@ -1,187 +1,177 @@
-/* Reset some default browser styles */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  line-height: 1.3;
+}
+
+:root {
+  /* Define custom colors as CSS variables */
+  --outer-space: #0a345e;
+  --bright-turquoise: #2aefcb;
+  --gin: #7bc9af;
+  --heliotrope: #f7e653;
+  --navy: #4d6b80;
+}
+
+body {
+  /* Set the base font style, size, and line height for the entire page */
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style the main header */
+.main-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 40px; /* Increase padding for better spacing */
+  text-align: center;
+  transition: flex-basis 500ms linear;
+}
+
+.main-header h1 {
+  font-size: 2rem;
+}
+
+.main-header h2 {
+  font-size: 1.5rem;
+}
+
+/* Style the navigation bar */
+.nav-links {
+  background: #13293d;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-links ul {
+  text-align: right;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Segoe UI';
+}
+
+.nav-links a:hover {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+/* Style the about section */
+#about {
+  background: #13293d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  line-height: 1.3;
+}
+
+.about-card {
+  background: #13293d;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border-style: solid ;
+  border-width: 1px;
+}
+
+.about-card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px; /* Fixed height for consistency */
+  border-radius: 5px; /* Added the missing unit */
+  padding: 5px;
   margin: 5px;
 }
 
-/* Define variables for colors */
-:root {
-  --outer-space: #0a345e;
-  --bright-turquoise: #2aefcb;
-  --cyan: #7bc9af;
-  --neutral-blue: #a6f2ff;
+.about-card h4 {
+  text-align: left; /* Adjusted text alignment */
+  margin-left: 20px;
+  font-family: 'Segoe UI';
 }
 
-/* Apply global styles */
-body {
-  font-family: Verdana,;
-  background-color: var(--outer-space);
-  color: var(--neutral-blue);
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 3px;
-  padding: 3px;
- display: flex;
- flex-direction: column;
- 
+/* Style the portfolio section */
+#portfolio {
+  background: #13293d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
-/* Style the header section */
-.header {
-  padding: 2em 2em 0;
-  font-family: 'Verdana';
-  background-color: #2a607c;
-  color: #ffffff;
-  margin: 3px;
-}
-
-.header h1 {
-  display: inline-block;
-  font-size: 35px;
-  margin-top: 30px;
-  margin-left: 25px;
-}
-
-.header h1 .stamax {
-  color: #96ca62;
-  font-size: 50px;
-}
-
-.header div {
-  padding-top: 15px;
-  margin-right: 5px;
-  float: right;
-}
-           
-.header ul {
-  font-family: 'Verdana';
-  list-style-type: none;
-  text-align: right;
-  margin-bottom: 20px;
-  font-size: 25px;
-  margin-top: -50px;
- 
-}
-
-.header ul li {
-  display: inline-block;
-  margin-right: 5px;
-  
-} 
-
-a {
-  color: #ffffff;
-  text-decoration: none; 
-}
-
-/* Style the main content */
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 2%;
-  flex-direction: column;
-  padding: 2em 2em 0;
-}
-
-
-.card-about {
-  padding: 3em 3em 0;
-  font-family: 'Verdana';
-  background-color: #2a607c;
-  color: #ffffff;
-  margin: 3px;
-}
-.about-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 10px;
-  padding: 20px;
-}
-
-
-.about-text {
-  flex: 1;
-}
-
-.float-right {
-  float: right;
-  margin-right: 25px;
-}
-.about-image {
-  flex: 1;
-  margin: 0 5px; /* Add some margin for spacing */
-}
-
-/* Add a media query for responsiveness */
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column; /* Back to a column layout on smaller screens */
-  }
-
-  .about-text,
-  .about-image {
-    flex: 1;
-    margin: 0;
-  }
-}
-
-
-
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .card {
-  flex-basis: calc(50% - 20px); /* To create two columns with a small gap */
-  margin-bottom: 20px;
-  /* Add other styling as needed */
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  margin: 10px;
 }
+
+.card:hover {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
 .card header {
   padding: 20px;
   background: #13293d;
   color: #fff;
-} 
-
-/* For responsiveness on smaller screens */
-@media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
-  }
 }
 
-footer {
-  background-color: #114f5a;
-  color: var(--neutral-blue);
-  padding: 2em 2em 0;
+.card img {
+  width: 100%;
+  min-width: 400px;
+  margin: 0px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the contact section */
+#contact {
+  background: var(--navy);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.links {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Segoe UI';
+}
+
+.icons li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.icons a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Footer styles */
+.footer {
+  background: #13293d;
+  color: #fff;
   text-align: center;
 }
-
-footer .inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer ul.icons {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px; /* Adjust the spacing between icons as needed */
-}
-
-footer ul.icons li {
-  display: inline;
-}
-
-footer h4 {
-  margin: 20px 0;
-  font-size: 20px; /* Adjust the font size as needed */
-  color: var(--neutral-blue);
-}
-
-
