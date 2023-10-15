@@ -1,17 +1,20 @@
 * {
-  margin: 0;
+  margin: 2;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.3;
+  font-size: 100%;
 }
 
 :root {
   /* Define custom colors as CSS variables */
-  --outer-space: #0a345e;
+  --outer-space:#13293d;
   --bright-turquoise: #2aefcb;
-  --gin: #7bc9af;
-  --heliotrope: #f7e653;
-  --navy: #4d6b80;
+  --gin: #b9fff3;
+  --heliotrope: #53f792;
+  --navy: #263749;
+  --lemon:#fcfdba;
+
 }
 
 body {
@@ -25,10 +28,10 @@ body {
 /* Style the main header */
 .main-header {
   background: var(--navy);
-  color: #fff;
+  color: var(--gin);
   padding: 40px; /* Increase padding for better spacing */
   text-align: center;
-  transition: flex-basis 500ms linear;
+  
 }
 
 .main-header h1 {
@@ -41,9 +44,11 @@ body {
 
 /* Style the navigation bar */
 .nav-links {
-  background: #13293d;
+  background: var(--outer-space);
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  color: var(--gin);
+  font-size: 1.5rem;
 }
 
 .nav-links ul {
@@ -57,10 +62,11 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: var(--gin);
   font-size: 20px;
-  padding: 10px;
+  padding: 2px;
   font-family: 'Segoe UI';
+  
 }
 
 .nav-links a:hover {
@@ -69,8 +75,8 @@ body {
 
 /* Style the about section */
 #about {
-  background: #13293d;
-  color: #fff;
+  background: var(--outer-space);
+  color: var(--gin);
   padding: 20px;
   text-align: center;
   margin: 20px;
@@ -78,33 +84,37 @@ body {
 }
 
 .about-card {
-  background: #13293d;
+  background: var(--outer-space);
   display: flex;
   align-items: center;
   border-radius: 3px;
   border-style: solid ;
   border-width: 1px;
+  margin: 10px;
 }
 
 .about-card img {
   max-width: 100%;
   height: auto;
-  max-height: 600px; /* Fixed height for consistency */
-  border-radius: 5px; /* Added the missing unit */
+  max-height: 600px; 
+  border-radius: 5px; 
   padding: 5px;
   margin: 5px;
 }
 
-.about-card h4 {
-  text-align: left; /* Adjusted text alignment */
+.about {
+  text-align: left; 
   margin-left: 20px;
-  font-family: 'Segoe UI';
+  font-family: 'Verdana';
+  line-height: 2.0;
+  padding: 20;
+  font-size: 14px;
 }
 
 /* Style the portfolio section */
 #portfolio {
-  background: #13293d;
-  color: #fff;
+  background: var(--outer-space);
+  color: whitesmoke;
   padding: 20px;
   text-align: center;
   margin: 20px;
@@ -118,12 +128,12 @@ main {
 
 .card {
   flex: 1 0 0;
-  padding: 10px;
   text-align: center;
   border-style: solid;
   border-width: 1px;
   border-radius: 3px;
   margin: 10px;
+  background: var(--navy);
 }
 
 .card:hover {
@@ -132,8 +142,8 @@ main {
 
 .card header {
   padding: 20px;
-  background: #13293d;
-  color: #fff;
+  background: var(--outer-space);
+  color: var(--gin);
 }
 
 .card img {
@@ -146,32 +156,95 @@ main {
 
 /* Style the contact section */
 #contact {
-  background: var(--navy);
-  color: #fff;
+  background: var(--outer-space);
+  color: var(--gin);
   padding: 20px;
   text-align: center;
   margin: 0;
+ 
 }
 
-.links {
-  color: #fff;
+.links li {
+  display: inline-block;
+  color: var(--gin);
   text-decoration: none;
   font-family: 'Segoe UI';
+  text-align: center;
 }
 
-.icons li {
-  display: inline;
+.facebook { 
   margin: 0 10px;
+  color: var(--gin);
+  text-decoration: none;
+}
+.facebook:hover {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
 }
 
-.icons a {
-  color: #fff;
-  font-size: 1.5rem;
+.instagram { 
+  margin: 0 10px;
+  color: var(--gin);
+  text-decoration: none;
 }
+.instagram:hover {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+.github { 
+  margin: 0 10px;
+  color: var(--gin);
+  text-decoration: none;
+}
+.github:hover {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+.linkedin-in{ 
+  margin: 0 10px;
+  color: var(--gin);
+  text-decoration: none;
+}
+.linkedin-in:hover {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
 
 /* Footer styles */
 .footer {
-  background: #13293d;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+    background: var(--navy);
+    color: var(--gin);
   text-align: center;
+  padding: 20px;
+
+}
+
+/* Define styles for screens with a maximum width of 768px (typical for tablets) */
+@media screen and (max-width: 768px) {
+  .main-header {
+    padding: 20px; /* Adjust header padding for smaller screens */
+  }
+  .nav-links {
+    font-size: 18px; /* Adjust font size for navigation links */
+  }
+  .card {
+    flex: 1 0 100%; /* Make portfolio cards full-width for smaller screens */
+  }
+  .card img {
+    width: 100%; /* Make portfolio card images full-width */
+  }
+}
+
+/* Define styles for screens with a maximum width of 480px (typical for mobile devices) */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    font-size: 16px; /* Further reduce font size for navigation links */
+  }
+  .about-card {
+    flex-direction: column; /* Stack the image and text in the about section */
+  }
+  .about-card img {
+    max-height: 300px; /* Adjust image size */
+  }
 }
