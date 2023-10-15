@@ -11,6 +11,8 @@ Welcome to Stas Moro's professional portfolio website. This website showcases a 
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Credits](#credits)
+- [Deployment](#deployment)
 
 ## Website
 The website is live and accessible at [Stas Moro's Professional Portfolio](https://stas-cell-max.github.io/SM_professional-portfolio/).
@@ -45,3 +47,7 @@ https://developer.mozilla.org/en-US/
 https://css-tricks.com/
 https://hariripontarini.com/
 https://norr.com/
+
+## Deployment 
+https://stas-cell-max.github.io/SM_professional-portfolio/
+![SM_professional_portfolio](https://github.com/Stas-Cell-Max/SM_professional-portfolio/assets/137020431/cb4afff8-45b4-477b-b20d-e7253955ffbd)
