@@ -38,3 +38,16 @@ If you'd like to contribute to this website or report issues, please create a ne
 
 ## License
 This project is licensed under the Apache License  - see the [LICENSE](Apache License) file for details.
+
+## Credits
+
+https://www.w3schools.com/
+
+https://developer.mozilla.org/en-US/
+
+https://css-tricks.com/
+
+https://hariripontarini.com/
+
+https://norr.com/
+
